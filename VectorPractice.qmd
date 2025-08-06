@@ -8,7 +8,7 @@ editor: visual
 
 ## Vectors
 
-### \* create and store the vector
+###  Create and store the vector
 
 ```{r}
 marmots <- c("blue", "green", "4", "yellow")
@@ -24,7 +24,7 @@ class(bear)
 
 ```
 
-Vector addition and subtraction, scalar multiplier, and dot product
+### Vector addition and subtraction, scalar multiplier, and dot product
 
 ```{r}
 
@@ -38,4 +38,3 @@ ringtail - fox
 100 * ringtail # scalar multiplication 
 ringtail %*% fox # % tells are to do the dot product
 ```
-
