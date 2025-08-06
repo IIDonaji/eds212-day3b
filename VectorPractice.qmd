@@ -4,23 +4,38 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Interactive Session 3B
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Vectors
 
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+### \* create and store the vector
 
 ```{r}
-1 + 1
+marmots <- c("blue", "green", "4", "yellow")
+class(marmots)
+
+# create and store numeric vector
+pika <- c(12.4, 6.8, 2.9, 8.5)
+class(pika)
+
+# create amd stoore interger vector 
+bear <- c(20L, 3L, 5L, 18L, 23L)
+class(bear)
+
 ```
 
-You can add options to executable code like this
+Vector addition and subtraction, scalar multiplier, and dot product
 
 ```{r}
-#| echo: false
-2 * 2
+
+# creating new vectors 
+ringtail <- c(4.3, 8.9, 2.6, 7.1)
+fox <- c(9.0, 12.5, 5.4, 10.9)
+
+#perform vector math
+ringtail + fox
+ringtail - fox
+100 * ringtail # scalar multiplication 
+ringtail %*% fox # % tells are to do the dot product
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
